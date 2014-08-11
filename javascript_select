@@ -1,0 +1,31 @@
+- login
+
+XXXXXXXXXXXXX
+- select preview img
+	document.getElementsByClassName('image-preview')[0]
+
+- display download btn
+	document.getElementsByClassName('image-preview')[0].childNodes[3].style.display="inline-block"
+XXXXXXXXXXXX
+
+- display download options
+	document.getElementsByClassName('image-preview')[0].childNodes[3].click();
+
+- get the JPG button -- ie, first btn of the popup
+	document.getElementsByTagName('iframe')[8].contentWindow.document.getElementsByTagName('a')[0]
+
+- download the img.
+	var x = document.getElementsByTagName('iframe')[8].contentWindow.document.getElementsByTagName('a')[0]
+	x.click()
+
+- close popup
+	document.getElementsByClassName('fancybox-close')[0].click()
+
+- goto next page
+	document
+		.getElementsByClassName('paging')[0]
+		.getElementsByClassName('frame')[0]
+		.parentNode
+		.nextSibling
+		.getElementsByTagName('a')[0]
+		.click()
