@@ -1,0 +1,5 @@
+var login_url = "https://www.graphicstock.com/login"
+var token = $('input[type=hidden][name=token]').attr('token')
+
+username=username_here&password=password_herer&login=yes&submit=&token=token
+
